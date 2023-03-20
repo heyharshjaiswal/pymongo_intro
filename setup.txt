@@ -1,0 +1,12 @@
+1) Open MOngoDB Atlas
+2) Created an organiization
+3) Created a Project
+4) Added the database which added the trial cluster
+5) Click on the cluster title in the Database page and click on collections to add our own database
+- Databases are hte specififc to the applications, and collections is the specific information associated witht the database.
+6) Now go the overview of the cluster, then click connect, 
+- Connect to shell
+Using: mongosh "mongodb+srv://trialcluster.tyatfcm.mongodb.net/myFirstDatabase" --apiVersion 1 --username heyharshjaiswal
+Here myFirstDatabase is the name of the database that connections will use by default, which can be replaced...
+
+-  cluster.list_database_names()  -- going to list all the databases
