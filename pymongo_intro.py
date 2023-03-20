@@ -7,6 +7,7 @@ from bson.objectid import ObjectId
 from dotenv import load_dotenv, find_dotenv
 from pymongo import MongoClient
 
+load_dotenv(find_dotenv())
 printer = pprint.PrettyPrinter()
 
 def create_document():
@@ -105,7 +106,6 @@ def add_address_relation(user_id, address):
     address_collection.insert_one(address)
 
 if __name__ == '__main__':
-    load_dotenv(find_dotenv())
 
     username = os.environ.get("MONGODB_UN")
     password = os.environ.get("MONGODB_PW")
